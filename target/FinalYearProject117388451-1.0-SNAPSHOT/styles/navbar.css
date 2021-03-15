@@ -1,0 +1,43 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    color: rgb(0,0,0);
+}
+#navcol-1 {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+#hero-bottom {
+    margin-bottom: 50px;
+}
+
+#hero-bottom .container {
+    max-width: 700px;
+    text-align: center;
+}
+
+#hero-bottom .container-fluid {
+    /* max-width: 700px; */
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
+.jumbotron{
+    background-color: white;
+}
+
+
+#about-info{
+    width: 100%;
+    height: 100vh;
+    color: rgb(0,0,0);
+}
+
+.imageselected{
+    border: 5px solid orange;
+    opacity: 0.5;
+}

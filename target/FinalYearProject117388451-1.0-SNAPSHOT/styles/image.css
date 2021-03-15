@@ -1,0 +1,133 @@
+
+/* CSS for imageSelection.jsp */
+
+/* Navbar */
+header {
+    position: relative;
+    background-color: transparent;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    z-index: 2;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+
+}
+
+/* Upload Button */
+.btn-upload {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group>input,
+.form-label-group>label,
+.form-label-group>select{
+    padding: var(--input-padding-y) var(--input-padding-x);
+    height: auto;
+    border-radius: 2rem;
+}
+
+section{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+.nav-link {
+    color: #555;
+}
+
+.nav-link:hover {
+    background: #f5f5f5;
+}
+
+.login-heading {
+    font-weight: 300;
+}
+
+
+
+/* Browse PC */
+
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+#image-area {
+    border: 2px dashed rgb(0,0,0);
+    padding: 1rem;
+    position: relative;
+}
+
+#image-area::before {
+    content: 'Uploaded image result';
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+#image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+
+
+
+
+
+/* API Images */
+
+.imageselected{
+    border: 5px solid orange;
+    opacity: 0.5;
+}
+
+.image-hover:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
